@@ -29,6 +29,7 @@
   vertical-align: center;
   width: 100%;
   display: none;
+  border-top: 2px solid #eee;
 }
 
 .progressBar li {
