@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>EDealer - The complete solution for today's car dealer.</title>
+<meta name="description" content="Personal site of EDealer">
+<meta name="author" content="Mansura Chowdhury">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/main.css">
+<!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.png"> -->
+<script type="text/javascript" src="//use.typekit.net/rws3een.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+
+<img src="img/header.jpg" class="flex-img">
+
+<div class="wrap">
+<div class="container">
+  <div class="container-inner">
+
+    <!-- <section id="intro" class="wrapper">
+      <p class="byline">
+      Websites THAT HELP YOU SELL MORE CARS
+      Each EDealer website is built with a unique sense of ownership and branding customized for your dealership.</p>
+      <a href="" class="sliderLink">View Our Work</a>
+      
+    </section> -->
+
+    <section id="slide1" class="wrapper">
+      <div class="slide1Content">
+        <h2>Websites THAT HELP YOU SELL MORE CARS</h2>
+        <p>Each EDealer website is built with a unique sense of ownership and branding customized for your dealership.</p>
+        <a href="" class="sliderLink">View Our Work</a>
+      </div>
+      
+      <div id="slide1Img"><img src="img/1.png" class="flex-img"></div>
+    </section>
+
+    <section id="slide2" class="wrapper">
+      <div class="slide2Content">
+        <h2>Edealer’s award winning mobile data capture application</h2>
+        <p>Capture your inventory and automatically push vehicles to your advertising partners.</p>
+        <a href="" class="sliderLink">Learn More</a>
+      </div>
+      
+      <div id="slide2Img"><img src="img/2.png" class="flex-img"></div>
+    </section>
+
+    <section id="slide3" class="wrapper">
+      <div class="slide3Content">
+        <h2>Lead Management and Reporting</h2>
+        <p>Managing leads along with website traffic go hand and hand. EDealer gives you the tools to manage and react to what is working and what isn't.</p>
+        <a href="" class="sliderLink">Learn More</a>
+      </div>
+      
+      <div id="slide3Img"><img src="img/3.png" class="flex-img"></div>
+    </section>
+
+    <section id="slide4" class="wrapper">
+      <div class="slide4Content">
+        <h2>Enhance your campaigns and target the metrics that are going to sell cars.</h2>
+        <p>Dictate your online performance with an optimized and balanced advertising strategy. Leverage a wide range of mediums and measure your success.</p>
+        <a href="" class="sliderLink">Learn More</a>
+      </div>
+      
+      <div id="slide4Img"><img src="img/4.png" class="flex-img"></div>
+    </section>
+
+    <section id="slide5" class="wrapper">
+      <div class="slide5Content">
+        <h2>COnsulting and Support</h2>
+        <p>Support accessibility and communication are crucial to ongoing marketing success.</p>
+        <a href="" class="sliderLink">Learn More</a>
+      </div>
+      
+      <div id="slide5Img"><img src="img/5.png" class="flex-img"></div>
+    </section>
+
+  </div> <!-- container-inner -->
+</div> <!-- container -->
+</div>
+
+<div class="progressBar">
+<ul>
+<li>1</li>
+<li>1</li>
+<li>1</li>
+<li>1</li>
+</ul>
+</div>
+
+<img src="img/bottom.jpg" class="flex-img">
+
+<script src="js/jquery-2.0.2.min.js"></script>
+<script src="js/picasso.js"></script>
+
+<script type="text/javascript">
+  $(window).scroll(function(event) {
+    
+    // height of the document (total height)
+    var d = $(document).height();
+    
+    // height of the window (visible page)
+    var w = $(window).height();
+    
+    // scroll level
+    var s = $(this).scrollTop();
+    
+    // bottom bound - or the width of your 'big footer'
+    var bottomBound = 2146;
+    
+    // are we beneath the bottom bound?
+    if(d - (w + s) < bottomBound) {
+        // if yes, start scrolling our own way, which is the
+        // bottom bound minus where we are in the page
+        $('.progressBar').css({
+            bottom: bottomBound - (d - (w + s))
+        });
+    } else {
+        // if we're beneath the bottom bound, then anchor ourselves
+        // to the bottom of the page in traditional footer style
+        $('.progressBar').css({
+            bottom: 0
+        });            
+    }
+});
+
+  $(function(){
+    $(window).scroll(function() {              
+      $('.progressBar').toggle($(document).scrollTop() > 900);
+    });
+})
+
+</script>
+</body>
+</html>
