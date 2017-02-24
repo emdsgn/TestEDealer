@@ -1,0 +1,4 @@
+
+markdown: redcarpet
+baseurl: /TestEDealer
+exclude: ['README.md']
